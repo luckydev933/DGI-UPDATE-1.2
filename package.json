@@ -1,0 +1,33 @@
+{
+  "name": "dgi-backend-api",
+  "version": "1.0.0",
+  "description": "Dealer Group Integration API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "DGI"
+  ],
+  "author": "Robby Juniardi",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "js-sha256": "^0.9.0",
+    "mdbootstrap": "^4.13.0",
+    "morgan": "^1.9.1",
+    "mssql": "^6.0.1",
+    "response-time": "^2.3.2",
+    "winston": "^3.2.1"
+  }
+}

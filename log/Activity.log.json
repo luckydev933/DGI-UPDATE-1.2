@@ -1,0 +1,1309 @@
+{
+  "DealerRequestActivity": "01199",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 10:11:11 GMT",
+  "ResponseTime": "115.554",
+  "Message": "5",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi/api/v1/dphlo/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "404",
+  "RequestTime": "Thu, 28 May 2020 12:07:00 GMT",
+  "ResponseTime": "2.707",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/dphlo/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "400",
+  "RequestTime": "Thu, 28 May 2020 12:07:11 GMT",
+  "ResponseTime": "77.001",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/dphlo/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "400",
+  "RequestTime": "Thu, 28 May 2020 12:11:54 GMT",
+  "ResponseTime": "79.462",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/dphlo/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "400",
+  "RequestTime": "Thu, 28 May 2020 12:12:07 GMT",
+  "ResponseTime": "77.471",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/dphlo/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "400",
+  "RequestTime": "Thu, 28 May 2020 12:12:45 GMT",
+  "ResponseTime": "18.043",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/dphlo/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "400",
+  "RequestTime": "Thu, 28 May 2020 12:26:21 GMT",
+  "ResponseTime": "76.753",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/dphlo/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "400",
+  "RequestTime": "Thu, 28 May 2020 12:27:36 GMT",
+  "ResponseTime": "79.255",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/dphlo/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "400",
+  "RequestTime": "Thu, 28 May 2020 12:29:50 GMT",
+  "ResponseTime": "80.767",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/dphlo/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "400",
+  "RequestTime": "Thu, 28 May 2020 12:30:33 GMT",
+  "ResponseTime": "84.615",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/dphlo/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "400",
+  "RequestTime": "Thu, 28 May 2020 12:31:21 GMT",
+  "ResponseTime": "79.875",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/dphlo/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 12:31:41 GMT",
+  "ResponseTime": "87.164",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/doch/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 13:39:08 GMT",
+  "ResponseTime": "207.182",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/dphlo/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 13:39:35 GMT",
+  "ResponseTime": "16.441",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/inv1/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 13:47:20 GMT",
+  "ResponseTime": "17.244",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/inv2/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 13:48:45 GMT",
+  "ResponseTime": "0.751",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/inv2/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 13:49:05 GMT",
+  "ResponseTime": "0.298",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/inv2/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 14:29:41 GMT",
+  "ResponseTime": "3.603",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/inv2/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 14:35:20 GMT",
+  "ResponseTime": "5.601",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/inv2/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 14:35:48 GMT",
+  "ResponseTime": "7.113",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/inv2/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "400",
+  "RequestTime": "Thu, 28 May 2020 14:37:32 GMT",
+  "ResponseTime": "76.782",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/inv2/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "400",
+  "RequestTime": "Thu, 28 May 2020 14:39:19 GMT",
+  "ResponseTime": "87.963",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/inv2/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "400",
+  "RequestTime": "Thu, 28 May 2020 14:39:50 GMT",
+  "ResponseTime": "81.993",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/inv2/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "400",
+  "RequestTime": "Thu, 28 May 2020 14:40:58 GMT",
+  "ResponseTime": "83.184",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/inv2/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "400",
+  "RequestTime": "Thu, 28 May 2020 14:43:24 GMT",
+  "ResponseTime": "76.671",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/inv2/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "400",
+  "RequestTime": "Thu, 28 May 2020 14:44:07 GMT",
+  "ResponseTime": "78.528",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/inv2/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "400",
+  "RequestTime": "Thu, 28 May 2020 14:44:39 GMT",
+  "ResponseTime": "78.444",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/inv2/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "400",
+  "RequestTime": "Thu, 28 May 2020 14:46:54 GMT",
+  "ResponseTime": "84.064",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/inv2/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "400",
+  "RequestTime": "Thu, 28 May 2020 14:47:16 GMT",
+  "ResponseTime": "77.438",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/inv2/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "400",
+  "RequestTime": "Thu, 28 May 2020 14:47:54 GMT",
+  "ResponseTime": "82.535",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/inv2/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "400",
+  "RequestTime": "Thu, 28 May 2020 14:48:41 GMT",
+  "ResponseTime": "78.373",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/inv2/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "400",
+  "RequestTime": "Thu, 28 May 2020 14:49:27 GMT",
+  "ResponseTime": "83.039",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/inv2/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "400",
+  "RequestTime": "Thu, 28 May 2020 14:49:55 GMT",
+  "ResponseTime": "79.285",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/inv2/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "400",
+  "RequestTime": "Thu, 28 May 2020 14:50:31 GMT",
+  "ResponseTime": "78.145",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/inv2/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 14:51:17 GMT",
+  "ResponseTime": "96.595",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/inv1/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "400",
+  "RequestTime": "Thu, 28 May 2020 14:51:40 GMT",
+  "ResponseTime": "11.682",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/inv1/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 14:53:37 GMT",
+  "ResponseTime": "16.908",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/dphlo/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 14:54:10 GMT",
+  "ResponseTime": "19.611",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/dphlo/add",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 14:54:37 GMT",
+  "ResponseTime": "11.848",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi/api/v1/prsp/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "404",
+  "RequestTime": "Thu, 28 May 2020 14:54:58 GMT",
+  "ResponseTime": "1.590",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/prsp/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 14:55:07 GMT",
+  "ResponseTime": "53.801",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "06649",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/prsl/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 14:55:35 GMT",
+  "ResponseTime": "109.929",
+  "Message": "148",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi/api/v1/pkb/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "404",
+  "RequestTime": "Thu, 28 May 2020 14:55:50 GMT",
+  "ResponseTime": "0.153",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/pkb/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 14:55:57 GMT",
+  "ResponseTime": "696.898",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/pinb/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 14:56:29 GMT",
+  "ResponseTime": "16.436",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/pkb/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 14:58:44 GMT",
+  "ResponseTime": "27.338",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/pkb/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 14:58:59 GMT",
+  "ResponseTime": "453.457",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "06649",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/prsl/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 14:59:26 GMT",
+  "ResponseTime": "98.261",
+  "Message": "148",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi/api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "404",
+  "RequestTime": "Thu, 28 May 2020 15:14:07 GMT",
+  "ResponseTime": "2.639",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "06926",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 15:14:17 GMT",
+  "ResponseTime": "127.665",
+  "Message": "14",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "06649",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/spk/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 15:15:38 GMT",
+  "ResponseTime": "79.129",
+  "Message": "15",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/lsng/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 15:17:20 GMT",
+  "ResponseTime": "78.308",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/doch/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 15:18:15 GMT",
+  "ResponseTime": "16.129",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/doch/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 15:18:22 GMT",
+  "ResponseTime": "12.308",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/uinb/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 15:18:45 GMT",
+  "ResponseTime": "31.294",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/pinb/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 15:20:58 GMT",
+  "ResponseTime": "53.863",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:222.124.48.28",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 28 May 2020 15:56:24 GMT",
+  "ResponseTime": "19.656",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:140.0.234.255",
+  "Endpoint": "/dgi_api/v1/pkb/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Fri, 29 May 2020 01:21:13 GMT",
+  "ResponseTime": "28.778",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:140.0.234.255",
+  "Endpoint": "/dgi_api/v1/pkb/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Fri, 29 May 2020 01:25:51 GMT",
+  "ResponseTime": "28.024",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:140.0.234.255",
+  "Endpoint": "/dgi_api/v1/pkb/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Fri, 29 May 2020 01:26:03 GMT",
+  "ResponseTime": "302.717",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:140.0.234.255",
+  "Endpoint": "/dgi_api/v1/pkb/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Fri, 29 May 2020 01:34:33 GMT",
+  "ResponseTime": "25.543",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:114.122.104.11",
+  "Endpoint": "/dgi_api/v1/prsp/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Fri, 29 May 2020 04:27:36 GMT",
+  "ResponseTime": "61.098",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:114.122.104.11",
+  "Endpoint": "/dgi_api/v1/prsp/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Fri, 29 May 2020 04:27:52 GMT",
+  "ResponseTime": "19.935",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:114.122.104.11",
+  "Endpoint": "/dgi_api/v1/prsp/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Fri, 29 May 2020 04:28:05 GMT",
+  "ResponseTime": "13.278",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "-",
+  "Endpoint": "http://www.rfa.org/english/",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "404",
+  "RequestTime": "Sat, 30 May 2020 20:55:19 GMT",
+  "ResponseTime": "2.127",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:140.0.234.255",
+  "Endpoint": "/dgi_api/v1/pkb/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Tue, 02 Jun 2020 03:46:21 GMT",
+  "ResponseTime": "75.040",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:140.0.234.255",
+  "Endpoint": "/dgi_api/v1/pkb/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Tue, 02 Jun 2020 03:46:29 GMT",
+  "ResponseTime": "4.263",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:140.0.234.255",
+  "Endpoint": "/dgi_api/v1/pkb/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Tue, 02 Jun 2020 03:47:01 GMT",
+  "ResponseTime": "230.448",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:14.102.153.244",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Wed, 03 Jun 2020 03:23:59 GMT",
+  "ResponseTime": "-",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:14.102.153.244",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Wed, 03 Jun 2020 03:27:59 GMT",
+  "ResponseTime": "64.568",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:14.102.153.244",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Wed, 03 Jun 2020 03:30:08 GMT",
+  "ResponseTime": "17.239",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:14.102.153.244",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Wed, 03 Jun 2020 03:30:46 GMT",
+  "ResponseTime": "15.443",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:14.102.153.244",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Wed, 03 Jun 2020 03:32:22 GMT",
+  "ResponseTime": "15.083",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:14.102.153.244",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Wed, 03 Jun 2020 03:32:33 GMT",
+  "ResponseTime": "10.510",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:14.102.153.244",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Wed, 03 Jun 2020 03:32:51 GMT",
+  "ResponseTime": "9.223",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:14.102.153.244",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Wed, 03 Jun 2020 03:34:01 GMT",
+  "ResponseTime": "16.523",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:14.102.153.244",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Wed, 03 Jun 2020 03:36:38 GMT",
+  "ResponseTime": "15.596",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:14.102.153.244",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Wed, 03 Jun 2020 03:39:31 GMT",
+  "ResponseTime": "113.575",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:14.102.153.244",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Wed, 03 Jun 2020 03:40:41 GMT",
+  "ResponseTime": "135.857",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:14.102.153.244",
+  "Endpoint": "/dgi_api/v1/prsp/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Wed, 03 Jun 2020 04:39:12 GMT",
+  "ResponseTime": "57.421",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:14.102.153.244",
+  "Endpoint": "/dgi_api/v1/prsp/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Wed, 03 Jun 2020 06:23:42 GMT",
+  "ResponseTime": "17.192",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "06649",
+  "IP": "::ffff:14.102.153.244",
+  "Endpoint": "/dgi_api/v1/spk/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Wed, 03 Jun 2020 07:44:00 GMT",
+  "ResponseTime": "337.121",
+  "Message": "36",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:14.102.153.244",
+  "Endpoint": "/dgi_api/v1/prsp/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Wed, 03 Jun 2020 09:55:09 GMT",
+  "ResponseTime": "57.010",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:14.102.153.244",
+  "Endpoint": "/dgi_api/v1/lsng/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Wed, 03 Jun 2020 10:06:26 GMT",
+  "ResponseTime": "74.565",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:14.102.153.244",
+  "Endpoint": "/dgi_api/v1/doch/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Wed, 03 Jun 2020 10:09:12 GMT",
+  "ResponseTime": "121.442",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:185.142.239.16",
+  "Endpoint": "/favicon.ico",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "404",
+  "RequestTime": "Wed, 03 Jun 2020 13:35:18 GMT",
+  "ResponseTime": "1.284",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:66.240.219.133",
+  "Endpoint": "/favicon.ico",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "404",
+  "RequestTime": "Thu, 04 Jun 2020 02:58:40 GMT",
+  "ResponseTime": "0.213",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "06649",
+  "IP": "::ffff:14.102.153.244",
+  "Endpoint": "/dgi_api/v1/spk/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 04 Jun 2020 04:42:04 GMT",
+  "ResponseTime": "215.658",
+  "Message": "36",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "06649",
+  "IP": "::ffff:14.102.153.244",
+  "Endpoint": "/dgi_api/v1/spk/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 04 Jun 2020 04:45:03 GMT",
+  "ResponseTime": "165.059",
+  "Message": "36",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:14.102.153.244",
+  "Endpoint": "/dgi_api/v1/lsng/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 04 Jun 2020 04:47:12 GMT",
+  "ResponseTime": "51.374",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:14.102.153.244",
+  "Endpoint": "/dgi_api/v1/doch/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 04 Jun 2020 04:47:29 GMT",
+  "ResponseTime": "199.292",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:14.102.153.244",
+  "Endpoint": "/dgi_api/v1/uinb/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 04 Jun 2020 04:49:12 GMT",
+  "ResponseTime": "56.540",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:14.102.153.244",
+  "Endpoint": "/dgi_api/v1/prsp/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 04 Jun 2020 04:49:26 GMT",
+  "ResponseTime": "47.200",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:36.79.249.187",
+  "Endpoint": "/dgi_api/v1/spk/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Thu, 04 Jun 2020 06:56:56 GMT",
+  "ResponseTime": "16.596",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::ffff:198.20.70.114",
+  "Endpoint": "/favicon.ico",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "404",
+  "RequestTime": "Sun, 07 Jun 2020 15:49:40 GMT",
+  "ResponseTime": "2.306",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::1",
+  "Endpoint": "/dgi-api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "404",
+  "RequestTime": "Sat, 20 Jun 2020 01:18:38 GMT",
+  "ResponseTime": "19.231",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "T10",
+  "IP": "::1",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Sat, 20 Jun 2020 01:18:48 GMT",
+  "ResponseTime": "1401.502",
+  "Message": "102",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "T10",
+  "IP": "::1",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Sat, 20 Jun 2020 01:42:53 GMT",
+  "ResponseTime": "945.094",
+  "Message": "102",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "T10",
+  "IP": "::1",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Sat, 20 Jun 2020 01:45:57 GMT",
+  "ResponseTime": "1086.359",
+  "Message": "102",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "T10",
+  "IP": "::1",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Sat, 20 Jun 2020 01:51:20 GMT",
+  "ResponseTime": "2478.169",
+  "Message": "102",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "T10",
+  "IP": "::1",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Sat, 20 Jun 2020 01:52:35 GMT",
+  "ResponseTime": "793.149",
+  "Message": "102",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "T10",
+  "IP": "::1",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Sat, 20 Jun 2020 01:55:21 GMT",
+  "ResponseTime": "987.651",
+  "Message": "102",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "T10",
+  "IP": "::1",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Sat, 20 Jun 2020 01:56:14 GMT",
+  "ResponseTime": "731.475",
+  "Message": "102",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "T10",
+  "IP": "::1",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Sat, 20 Jun 2020 02:04:52 GMT",
+  "ResponseTime": "726.088",
+  "Message": "102",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "T10",
+  "IP": "::1",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Sat, 20 Jun 2020 02:06:19 GMT",
+  "ResponseTime": "716.349",
+  "Message": "102",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "T10",
+  "IP": "::1",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Sat, 20 Jun 2020 02:07:02 GMT",
+  "ResponseTime": "792.034",
+  "Message": "102",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "T10",
+  "IP": "::1",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Sat, 20 Jun 2020 02:07:59 GMT",
+  "ResponseTime": "703.109",
+  "Message": "102",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "T10",
+  "IP": "::1",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Sat, 20 Jun 2020 02:12:51 GMT",
+  "ResponseTime": "759.916",
+  "Message": "102",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "T10",
+  "IP": "::1",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Sat, 20 Jun 2020 02:16:24 GMT",
+  "ResponseTime": "712.400",
+  "Message": "102",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "T10",
+  "IP": "::1",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Sat, 20 Jun 2020 02:17:58 GMT",
+  "ResponseTime": "724.668",
+  "Message": "102",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "T10",
+  "IP": "::ffff:127.0.0.1",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Sat, 20 Jun 2020 02:18:23 GMT",
+  "ResponseTime": "721.861",
+  "Message": "102",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "T10",
+  "IP": "::1",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Sat, 20 Jun 2020 02:19:06 GMT",
+  "ResponseTime": "790.150",
+  "Message": "102",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "T10",
+  "IP": "::1",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Sat, 20 Jun 2020 02:45:53 GMT",
+  "ResponseTime": "715.509",
+  "Message": "102",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "T10",
+  "IP": "::1",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Sat, 20 Jun 2020 02:52:09 GMT",
+  "ResponseTime": "640.159",
+  "Message": "102",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "T10",
+  "IP": "::1",
+  "Endpoint": "/dgi_api/v1/bast/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Sat, 20 Jun 2020 02:57:17 GMT",
+  "ResponseTime": "1010.792",
+  "Message": "102",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::1",
+  "Endpoint": "/dgi-api/v1/doch/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "404",
+  "RequestTime": "Sat, 20 Jun 2020 02:58:29 GMT",
+  "ResponseTime": "1.929",
+  "Message": "-",
+  "ResponseStatus": "-"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::1",
+  "Endpoint": "/dgi_api/v1/doch/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Sat, 20 Jun 2020 02:59:10 GMT",
+  "ResponseTime": "816.459",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::1",
+  "Endpoint": "/dgi_api/v1/doch/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Sat, 20 Jun 2020 03:15:16 GMT",
+  "ResponseTime": "919.936",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::1",
+  "Endpoint": "/dgi_api/v1/doch/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Sat, 20 Jun 2020 03:20:50 GMT",
+  "ResponseTime": "895.168",
+  "Message": "-",
+  "ResponseStatus": "1"
+}

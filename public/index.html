@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>DGI Web Services</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Start your project here--> 
+  <nav class="navbar navbar-expand-lg navbar-dark indigo">
+    <a class="navbar-brand" href="#">Dealer Group Integration API Web Services</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Overview <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/request">API Request</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <blockquote class="blockquote bq-success">
+    <p class="bq-title">Introduction</p>
+    <p>
+      Dealer Group Integration API adalah application programming interface berbasis web service yang 
+      dibuat untuk sinkronisasi data antar DMS MD (Main Dealer) dan Dealer Backend System dengan alur 
+      komunikasi machine to machine.
+      Secara proses kerja, DMS MD akan membuat API secara terpisah yang dapat diakses oleh Dealer 
+      Backend System, dengan ketentuan masing-masing Dealer hanya dapat mengakses data miliknya 
+      masing-masing, hal ini dipastikan dengan “authorization credential” yang dishare dari DMS MD ke 
+      Dealer. Untuk mencapai hal tersebut, DMS MD harus menambahkan Mapping API Key dengan DealerId, 
+      sehingga dealer tersebut hanya dapat mengakses datanya masing-masing. (critical)
+      Skema pemanggilan API dilakukan dengan 2 cara yaitu Push atau Pull dengan server pemanggil / 
+      inisiatornya adalah Dealer Backend System. Khusus untuk skema Push digunakan hanya untuk modul 
+      yang berhubungan dengan billing process.
+    </p>
+  </blockquote>
+
+  <blockquote class="blockquote bq-primary">
+    <p class="bq-title">Dependencies</p>
+    <p>
+      Untuk Mengakses DGI API , Diperlukan beberapa Dependency sebagai berikut :
+       
+      <div class="row">
+        <div class="col-md-8">
+          <blockquote class="blockquote">
+            <p class="lead"><mark>Header Request (Ajax / Axios) - URL : <u>http://example.com:8000/dgi/api/v1/modul(ex: spk)/read/</u></mark></p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Dependency</th>
+                  <th>Penjelasan</th> 
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>X-Request-Time</td>
+                  <td>Berisikan Unix Timestamp</td>
+                </tr>
+                <tr>
+                  <td>DGI-API-Key</td>
+                  <td>Berisikan API Key dari masing masing Dealer</td>
+                </tr>
+                <tr>
+                  <td>DGI-API-Token</td>
+                  <td>Berisikan Token yang dibuat berdasarkan rumus <b>sha256.hex(api key + secret key + unix)</b></b></td>
+                </tr>
+              </tbody>
+            </table>
+          </blockquote>
+          <blockquote class="blockquote">
+            <p class="lead"><mark>Body Request (Ajax / Axios) - URL : <u>http://example.com:8000/dgi/api/v1/modul(ex: spk)/read/</u></mark></p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Dependency</th>
+                  <th>Penjelasan</th> 
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>fromTime</td>
+                  <td>Periode Awal penarikan Data</td>
+                </tr>
+                <tr>
+                  <td>toTime</td>
+                  <td>Periode Batas penarikan Data . Maks 30 Hari</td>
+                </tr>
+                <tr>
+                  <td>Parameter Opsional</td>
+                  <td>Parameter Penarikan Opsional sesuai Dokumen, Ex: idSPK</b></b></td>
+                </tr>
+              </tbody>
+            </table>
+          </blockquote>
+          
+        </div>
+      </div>
+    </p>
+  </blockquote>
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+</body>
+</html>
