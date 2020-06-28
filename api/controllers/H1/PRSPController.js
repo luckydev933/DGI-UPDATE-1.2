@@ -3,6 +3,8 @@ const DBO = require('../../../modules/database')
 const Model = require('../../models/H1/PRSPModel')
 const SQL = require('mssql')
 const sha256 = require('js-sha256')
+const Kamus = require('../../../modules/KamusData')
+const DateFormatting = require('../../../modules/DateFormatting')
 
 function DateSplitter(datestring){
     const DateSplit = datestring.split(" ")
@@ -100,16 +102,20 @@ Controller.post('/', async function(request, response) {
                             noKontakKantor: data.recordset[i].TELP_KTR,
                             tanggalAppointment: data.recordset[i].TGL_APPOINTMENT,
                             waktuAppointment: data.recordset[i].WAKTU_APPOINTMENT,
-                            metodeFollowUp: data.recordset[i].METODE_FU,
-                            testRidePreference: data.recordset[i].TEST_DRIVE,
-                            statusFollowUpProspecting: data.recordset[i].STATUS_FU,
-                            statusProspect: data.recordset[i].STATUS_PROS,
+                            metodeFollowUp: Kamus.MetodeFollowUp(data.recordset[i].METODE_FU),
+                            testRidePreference: Kamus.TestRidePreference(data.recordset[i].TEST_DRIVE),
+                            statusFollowUpProspecting: Kamus.statusFollowUpProspecting(data.recordset[i].STATUS_FU),
+                            statusProspect: Kamus.StatusProspect(data.recordset[i].STATUS_PROS),
                             idSalesPeople: data.recordset[i].KD_SALES,
                             idEvent: data.recordset[i].KD_EVENT,
+                            dealerId: data.recordset[i].KD_DEALERAHM,
+                            createdTime: DateFormatting.FormatDate(data.recordset[i].CREATED_TIME_PROS),
+                            modifiedTime: data.recordset[i].MODTIME_PROS,
                             unit: [{
                                 kodeTipeUnit: data.recordset[i].KD_TYPEMOTOR,
                                 salesProgramId: data.recordset[i].KD_SALESPROGRAM,
-                                createdTime: data.recordset[i].CREATED_TIME
+                                createdTime: data.recordset[i].CREATED_TIME,
+                                modifiedTime: data.recordset[i].MODIFIED_UNIT
                             }]
                         }
                         databinding.push(bind)

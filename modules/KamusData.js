@@ -1,3 +1,38 @@
+jenisIdPenerimaBPKB = function(param){
+    if(param = "KTP"){
+        return 1
+    }else if(param = "TDP"){
+        return 2
+    }else if(param = "Kitas"){
+        return 3
+    }else if(param = "Passport"){
+        return 4
+    }else{
+        return NULL
+    }
+}
+
+const StatusFakturSTNK1 = function(param){
+    if(param = "Mohon Faktur"){
+        return 1
+    }else if(param = "Sudah diserahkan ke Biro Jasa"){
+        return 2
+    }else if(param = "STNK selesai"){
+        return 3
+    }else if(param = "STNK diserahkan ke konsumen"){
+        return 4
+    }else if(param = "BPKB selesai"){
+        return 5
+    }else if(param = "BPKB diserahkan ke konsumen"){
+        return 6
+    }else if(param = "Plat Nopol selesai"){
+        return 7
+    }else if(param = "Plat Nopol diserahkan ke konsumen"){
+        return 8
+    }else {
+        return NULL
+    }
+}
 // SUMBER PROSPECT
 const SumberProspect = function(sumber){
     if(sumber = "NULL"){
@@ -368,7 +403,7 @@ const statusFakturSTNK = function(opt){
 
 }
 
-exports.statusFakturSTNK            = statusFakturSTNK
+//exports.statusFakturSTNK            = statusFakturSTNK
 exports.statusDeliveryDocument      = statusDeliveryDocument
 exports.tipePembayaran              = tipePembayaran
 exports.StatusSpk                   = StatusSpk
@@ -384,3 +419,5 @@ exports.MetodeFollowUp              = MetodeFollowUp
 exports.StatusFollowUp              = StatusFollowUp
 exports.StatusProspect              = StatusProspect
 exports.TestRidePreference          = TestRidePreference
+exports.StatusFakturSTNK            = StatusFakturSTNK1
+exports.jenisIdPenerimaBPKB         = jenisIdPenerimaBPKB

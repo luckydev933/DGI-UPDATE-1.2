@@ -3,6 +3,7 @@ const DBO = require('../../../modules/database')
 const Model = require('../../models/H1/SPKModel')
 const SQL = require('mssql')
 const sha256 = require('js-sha256')
+const Kamus = require('../../../modules/KamusData')
 
 function DateSplitter(datestring){
     const DateSplit = datestring.split(" ")
@@ -145,8 +146,10 @@ Controller.post('/', async function(request, response){
                                     idSalesPeople: result.recordset[i].KD_SALES,
                                     idEvent: result.recordset[i].KD_EVENT,
                                     tanggalPesanan: result.recordset[i].TGL_SPK,
-                                    statusSPK: result.recordset[i].STATUS_SPK,
+                                    statusSPK: Kamus.StatusSpk(result.recordset[i].STATUS_SPK),
+                                    dealerId: result.recordset[i].KD_DEALERAHM,
                                     createdTime: result.recordset[i].CREATED_TIME,
+                                    modifiedTime: result.recordset[i].MODTIME,
                                     unit: [
                                         {
                                             kodeTipeUnit: result.recordset[i].KD_TYPEMOTOR,
@@ -154,14 +157,15 @@ Controller.post('/', async function(request, response){
                                             quantity: result.recordset[i].JUMLAH,
                                             hargaJual: result.recordset[i].HARGA,
                                             diskon: result.recordset[i].DISKON,
-                                            kodePPN: result.recordset[i].KD_PPN,
+                                            amountPPN: result.recordset[i].KD_PPN,
                                             fakturPajak: result.recordset[i].FAKTUR_PAJAK,
-                                            tipePembayaran: result.recordset[i].CARA_BAYAR,
+                                            tipePembayaran: Kamus.tipePembayaran(result.recordset[i].CARA_BAYAR),
                                             jumlahTandaJadi: result.recordset[i].HARGA_JADI,
                                             tanggalPengiriman: result.recordset[i].TGL_KIRIM,
                                             idSalesProgram: result.recordset[i].KD_SALESPROGRAM,
                                             idApparel: result.recordset[i].NAMA_HADIAH,
-                                            createdTime: result.recordset[i].CREATED_TIME_PROSPECT
+                                            createdTime: result.recordset[i].CREATED_TIME_PROSPECT,
+                                            modifiedTime: result.recordset[i].MODTIME_UNIT
                                         }
                                     ],
                                     dataAnggotaKeluarga: [

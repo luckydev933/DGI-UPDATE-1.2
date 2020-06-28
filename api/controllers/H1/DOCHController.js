@@ -4,6 +4,7 @@ const Model = require('../../models/H1/DOCHModel')
 const Auth = require('../../../modules/Authorization')
 const sha256 = require('js-sha256')
 const SQL = require('mssql')
+const Kamus = require('../../../modules/KamusData')
 
 function DateSplitter(datestring){
     const DateSplit = datestring.split(" ")
