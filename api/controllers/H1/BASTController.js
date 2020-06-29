@@ -5,6 +5,7 @@ const Auth = require('../../../modules/Authorization')
 const SQL = require('mssql')
 const sha256 = require('js-sha256')
 const DateFormatting = require('../../../modules/DateFormatting')
+const Kamus = require('../../../modules/KamusData')
 
 function DateSplitter(datestring){
     const DateSplit = datestring.split(" ")
@@ -81,6 +82,7 @@ Controller.post('/', async function(request, response) {
                     .execute('SP_DGI_API_AUTH')
                 const BastResult = await pool.request()
                     .input('dealerId', SQL.VarChar, dealerId.recordset[0].DEALER_ID)
+                    .input('dealer', SQL.VarChar, request.body.dealerId)
                     .input('fromTime', SQL.VarChar, request.body.fromTime)
                     .input('toTime', SQL.VarChar, request.body.toTime)
                     .input('deliveryDocumentId', SQL.VarChar, request.body.deliveryDocumentId)
@@ -94,7 +96,7 @@ Controller.post('/', async function(request, response) {
                             tanggalPengiriman: DateFormatting.FormatDate(BastResult.recordset[i].TGL_KIRIM),
                             tanggalSuratjalan: DateFormatting.FormatDate(BastResult.recordset[i].TGL_SURATJALAN),
                             idDriver: BastResult.recordset[i].ID_DELIVERY,
-                            statusDeliveryDocument: "4",
+                            statusDeliveryDocument: Kamus.statusDeliveryDocument(BastResult.recordset[i].STATUS_SJ),
                             dealerId: BastResult.recordset[i].KD_DEALERAHM,
                             //statusDeliveryDocument: BastResult.recordset[i].STATUS_SJ,
                             detail: [{

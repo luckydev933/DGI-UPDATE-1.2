@@ -3,6 +3,8 @@ const DBO = require('../../../modules/database')
 const Model = require('../../models/H1/UINBModel')
 const SQL = require('mssql')
 const sha256 = require('js-sha256')
+const Kamus = require('../../../modules/KamusData')
+const DateFormatting = require('../../../modules/DateFormatting')
 
 function DateSplitter(datestring){
     const DateSplit = datestring.split(" ")
@@ -67,6 +69,7 @@ Controller.post('/', async function(request, response) {
                     .execute('SP_DGI_API_AUTH')
                 const UinbResult = await pool.request()
                     .input('dealerId', SQL.VarChar, dealerId.recordset[0].DEALER_ID)
+                    .input('dealer', SQL.VarChar, request.body.dealerId)
                     .input('fromTime', SQL.VarChar, request.body.fromTime)
                     .input('toTime', SQL.VarChar, request.body.toTime)
                     .input('poId', SQL.VarChar(25), request.body.poId)
@@ -76,11 +79,13 @@ Controller.post('/', async function(request, response) {
                     for (var i = 0; i < UinbResult.recordset.length; i++) {
                         const bind = {
                             noShippingList: UinbResult.recordset[i].NO_SJMASUK,
-                            tanggalTerima: UinbResult.recordset[i].TGL_TRANS,
+                            tanggalTerima: DateFormatting.FormatTime(UinbResult.recordset[i].TGL_TRANS),
                             mainDealerId: UinbResult.recordset[i].KD_MAINDEALER,
                             dealerId: UinbResult.recordset[i].KD_DEALERAHM,
                             noInvoice: UinbResult.recordset[i].NO_TERIMASJM,
-                            statusShippingList: UinbResult.recordset[i].STATUS_SJ,
+                            statusShippingList: Kamus.statusShippingList(UinbResult.recordset[i].STATUS_SJ),
+                            createdTime: UinbResult.recordset[i].CREATED_TIME,
+                            modifiedTime: UinbResult.recordset[i].MODTIME,
                             unit: [
                                 {
                                     kodeTipeUnit: UinbResult.recordset[i].KD_TYPEMOTOR,
@@ -89,12 +94,13 @@ Controller.post('/', async function(request, response) {
                                     kuantitasDiterima: UinbResult.recordset[i].STOCK_STATUS,
                                     noMesin: UinbResult.recordset[i].NO_MESIN,
                                     noRangka: UinbResult.recordset[i].NO_RANGKA,
-                                    statusRFS: UinbResult.recordset[i].KETERANGAN_NFRS,
+                                    statusRFS: Kamus.statusRFS(UinbResult.recordset[i].KETERANGAN_NFRS),
                                     poId: UinbResult.recordset[i].NO_PO,
                                     kelengkapanUnit: UinbResult.recordset[i].KSU,
                                     noGoodsReceipt: UinbResult.recordset[i].NO_RECEIPT,
                                     docNRFSId: UinbResult.recordset[i].NFRS_ID, 
                                     createdTime: UinbResult.recordset[i].CREATED_TIME,
+                                    modifiedTime: UinbResult.recordset[i].MODTIME
                                 }
                             ]
                         }

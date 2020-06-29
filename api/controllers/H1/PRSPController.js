@@ -68,7 +68,8 @@ Controller.post('/', async function(request, response) {
                     .input('SECRET_KEY', SQL.VarChar(250), secret_key.recordset[0].SECRET_KEY)
                     .execute('SP_DGI_API_AUTH')
                 const data = await pool.request()
-                    .input('dealerId', SQL.Int, dealerId.recordset[0].DEALER_ID)
+                    .input('dealerId', SQL.VarChar, dealerId.recordset[0].DEALER_ID)
+                    .input('dealer', SQL.VarChar, request.body.dealerId)
                     .input('fromTime', SQL.VarChar, request.body.fromTime)
                     .input('toTime', SQL.VarChar, request.body.toTime)
                     .input('idProspect', SQL.VarChar, request.body.idProspect)
@@ -78,8 +79,8 @@ Controller.post('/', async function(request, response) {
                     for (var i = 0; i < data.recordset.length; i++) {
                         const bind = {
                             idProspect: data.recordset[i].NO_PROSPECT,
-                            sumberProspect: data.recordset[i].SUMBER_PROS,
-                            tanggalProspect: data.recordset[i].TGL_PROSPECT,
+                            sumberProspect: Kamus.SumberProspect(data.recordset[i].SUMBER_PROS),
+                            tanggalProspect: DateFormatting.FormatTime(data.recordset[i].TGL_PROSPECT),
                             taggingProspect: data.recordset[i].PRIORITAS,
                             namaLengkap: data.recordset[i].NAMA_CUST,
                             noKontak: data.recordset[i].NOHP_CUST,
@@ -104,18 +105,18 @@ Controller.post('/', async function(request, response) {
                             waktuAppointment: data.recordset[i].WAKTU_APPOINTMENT,
                             metodeFollowUp: Kamus.MetodeFollowUp(data.recordset[i].METODE_FU),
                             testRidePreference: Kamus.TestRidePreference(data.recordset[i].TEST_DRIVE),
-                            statusFollowUpProspecting: Kamus.statusFollowUpProspecting(data.recordset[i].STATUS_FU),
+                            statusFollowUpProspecting: Kamus.StatusFollowUp(data.recordset[i].STATUS_FU),
                             statusProspect: Kamus.StatusProspect(data.recordset[i].STATUS_PROS),
                             idSalesPeople: data.recordset[i].KD_SALES,
                             idEvent: data.recordset[i].KD_EVENT,
                             dealerId: data.recordset[i].KD_DEALERAHM,
-                            createdTime: DateFormatting.FormatDate(data.recordset[i].CREATED_TIME_PROS),
-                            modifiedTime: data.recordset[i].MODTIME_PROS,
+                            createdTime: data.recordset[i].CREATED_TIME,
+                            modifiedTime: data.recordset[i].MODTIME,
                             unit: [{
                                 kodeTipeUnit: data.recordset[i].KD_TYPEMOTOR,
                                 salesProgramId: data.recordset[i].KD_SALESPROGRAM,
                                 createdTime: data.recordset[i].CREATED_TIME,
-                                modifiedTime: data.recordset[i].MODIFIED_UNIT
+                                modifiedTime: data.recordset[i].MODTIME_UNIT
                             }]
                         }
                         databinding.push(bind)

@@ -68,6 +68,7 @@ Controller.post('/', async function(request, response) {
                     .execute('SP_DGI_API_AUTH')
                 const result = await pool.request()
                     .input('dealerId', SQL.VarChar, dealerId.recordset[0].DEALER_ID)
+                    .input('dealer', SQL.VarChar, request.body.dealerId)
                     .input('fromTime', SQL.VarChar, request.body.fromTime)
                     .input('toTime', SQL.VarChar, request.body.toTime)
                     .input('idSPK', SQL.VarChar, request.body.idSPK)
@@ -88,7 +89,9 @@ Controller.post('/', async function(request, response) {
                             idPOFinanceCompany: result.recordset[i].PO_LEASING,
                             tanggalPembuatanPO: result.recordset[i].TGL_TRANS,
                             tanggalPengirimanPOFinanceCompany: result.recordset[i].PO_DATE,
-                            createdTime: result.recordset[i].CREATED_TIME
+                            dealerId: result.recordset[i].KD_DEALERAHM,
+                            createdTime: result.recordset[i].CREATED_TIME,
+                            modifiedTime: result.recordset[i].MODTIME
                         }
                         databinding.push(bind)
                     }

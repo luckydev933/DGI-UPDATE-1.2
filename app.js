@@ -147,7 +147,7 @@ App.post('/request/:modul', function(request, response){
     // })
 })
 App.use('/dgi_api/v1/dphlo/add/', DPHLOController)
-App.use('/dgi_api/v1/inv1/add/', INV1Controller)
+App.use('/dgi_api/v1/inv1/', INV1Controller)
 App.use('/dgi_api/v1/inv2/add/', INV2Controller)
 App.use('/dgi_api/v1/pkb/read/', PKBController)
 App.use('/dgi_api/v1/bast/read/', BASTController)

@@ -69,6 +69,7 @@ Controller.post('/', async function(request, response){
                     .execute('SP_DGI_API_AUTH')
                     const dochResult = await pool.request()
                     .input('dealerId', SQL.VarChar, dealerId.recordset[0].DEALER_ID)
+                    .input('dealer', SQL.VarChar, request.body.dealerId)
                     .input('fromTime', SQL.VarChar, request.body.fromTime)
                     .input('toTime', SQL.VarChar, request.body.toTime)
                     .input('idSPK', SQL.VarChar, request.body.idSPK)
@@ -88,7 +89,7 @@ Controller.post('/', async function(request, response){
                                         nomorRangka: dochResult.recordset[i].NO_RANGKA,
                                         nomorFakturSTNK: dochResult.recordset[i].FAKTUR_PENJUALAN,
                                         tanggalPengajuanSTNKKeBiro: dochResult.recordset[i].TGLMULAI_PENGURUSAN,
-                                        statusFakturSTNK: Kamus.statusFakturSTNK(dochResult.recordset[i].STATUS_STNK),
+                                        statusFakturSTNK: Kamus.StatusFakturSTNK(dochResult.recordset[i].STATUS_STNK),
                                         nomorSTNK: dochResult.recordset[i].DATA_NO_STNK,
                                         tanggalPenerimaanSTNKDariBiro: dochResult.recordset[i].TGL_PENERIMAAN_STNK,
                                         platNomor: dochResult.recordset[i].DATA_NO_PLAT,
@@ -101,11 +102,10 @@ Controller.post('/', async function(request, response){
                                         noIdPenerimaSTNK: dochResult.recordset[i].KD_CUSTOMER,
                                         noIdPenerimaBPKB: dochResult.recordset[i].KD_CUSTOMER,
                                         //jenisIdPenerimaSTNK: dochResult.recordset[i].JENIS_ID,
-                                        jenisIdPenerimaBPKB: Kamus.jenisIdPenerimaBPKB(),
-                                        jenisIdPenerimaSTNK: "1",
+                                        jenisIdPenerimaBPKB: Kamus.jenisIdPenerimaBPKB(dochResult.recordset[i].JENIS_ID),
+                                        jenisIdPenerimaSTNK: Kamus.jenisIdPenerimaBPKB(dochResult.recordset[i].JENIS_ID),
                                         createdTime: dochResult.recordset[i].CREATED_TIME,
                                         modifiedTime: dochResult.recordset[i].MODIFIED_TIME_DETAIL
-            
                                     }]
                                 }
                                 databinding.push(bind)

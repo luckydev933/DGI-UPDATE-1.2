@@ -4,6 +4,7 @@ const Model = require('../../models/H1/SPKModel')
 const SQL = require('mssql')
 const sha256 = require('js-sha256')
 const Kamus = require('../../../modules/KamusData')
+const DateFormatting = require('../../../modules/DateFormatting')
 
 function DateSplitter(datestring){
     const DateSplit = datestring.split(" ")
@@ -104,6 +105,7 @@ Controller.post('/', async function(request, response){
                     .execute('SP_DGI_API_AUTH')
                     const result = await pool.request().
                     input('dealerId', SQL.VarChar, dealerId.recordset[0].DEALER_ID).
+                    input('dealer', SQL.VarChar, request.body.dealerId).
                     input('fromTime', SQL.VarChar, request.body.fromTime).
                     input('toTime', SQL.VarChar, request.body.toTime).
                     input('idSalesPeople', SQL.VarChar, request.body.idSalesPeople).
@@ -145,7 +147,7 @@ Controller.post('/', async function(request, response){
                                     email: result.recordset[i].EMAIL,
                                     idSalesPeople: result.recordset[i].KD_SALES,
                                     idEvent: result.recordset[i].KD_EVENT,
-                                    tanggalPesanan: result.recordset[i].TGL_SPK,
+                                    tanggalPesanan: DateFormatting.FormatTime(result.recordset[i].TGL_SPK),
                                     statusSPK: Kamus.StatusSpk(result.recordset[i].STATUS_SPK),
                                     dealerId: result.recordset[i].KD_DEALERAHM,
                                     createdTime: result.recordset[i].CREATED_TIME,
@@ -164,7 +166,7 @@ Controller.post('/', async function(request, response){
                                             tanggalPengiriman: result.recordset[i].TGL_KIRIM,
                                             idSalesProgram: result.recordset[i].KD_SALESPROGRAM,
                                             idApparel: result.recordset[i].NAMA_HADIAH,
-                                            createdTime: result.recordset[i].CREATED_TIME_PROSPECT,
+                                            createdTime: result.recordset[i].CREATED_TIME_UNIT,
                                             modifiedTime: result.recordset[i].MODTIME_UNIT
                                         }
                                     ],

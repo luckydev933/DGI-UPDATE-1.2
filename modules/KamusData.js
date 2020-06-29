@@ -35,106 +35,101 @@ const StatusFakturSTNK1 = function(param){
 }
 // SUMBER PROSPECT
 const SumberProspect = function(sumber){
-    if(sumber = "NULL"){
-        return NULL
-    }
     if(sumber = "Pameran"){
         return "0001"
     }
-    if(sumber = "Showroom Event"){
+    else if(sumber = "Showroom Event"){
         return "0002"
     }
-    if(sumber = "Roadshow"){
+    else if(sumber = "Roadshow"){
         return "0003"
     }
-    if(sumber = "Walk In"){
+    else if(sumber = "Walk In"){
         return "0004"
     }
-    if(sumber = "Customer RO H1"){
+    else if(sumber = "Customer RO H1"){
         return "0005"
     }
-    if(sumber = "Customer RO H23"){
+    else if(sumber = "Customer RO H23"){
         return "0006"
     }
-    if(sumber = "Website"){
+    else if(sumber = "Website"){
         return "0007"
     }
-    if(sumber = "Social Media"){
+    else if(sumber = "Social Media"){
         return "0008"
     }
-    if(sumber = "External parties"){
+    else if(sumber = "External parties"){
         return "0009"
     }
-    if(sumber = "Mobile Apps"){
+    else if(sumber = "Mobile Apps"){
         return "0010"
     }
-    if(sumber = "Refferal"){
+    else if(sumber = "Refferal"){
         return "0011"
     }
-    if(sumber = "Contact Center"){
+    else if(sumber = "Contact Center"){
         return "0012"
     }
-    if(sumber = "Others"){
+    else if(sumber = "Others"){
         return "9999"
+    }else{
+        return NULL
     }
 }
 const MetodeFollowUp = function(method){
-    if(sumber = "NULL"){
-        return NULL
-    }
     if(method = "SMS"){
         return "1"
     }
-    if(method = "Call"){
+    else if(method = "Call"){
         return "2"
     }
-    if(method = "Visit"){
+    else if(method = "Visit"){
         return "3"
     }
-    if(method = "Direct Touch"){
+    else if(method = "Direct Touch"){
         return "4"
+    }else{
+        return NULL
     }
 }
 const TestRidePreference = function(opt){
-    if(sumber = "NULL"){
-        return NULL
-    }
     if(opt = "Yes"){
         return "1"
     }
-    if(opt = "No"){
+    else if(opt = "No"){
         return "0"
+    }else{
+        return NULL
     }
 }
 const StatusFollowUp = function(opt){
-    if(sumber = "NULL"){
-        return NULL
-    }
     if(opt = "Planned"){
         return "1"
     }
-    if(opt = "Done"){
+    else if(opt = "Done"){
         return "2"
+    }else{
+        return NULL
     }
 }
 const StatusProspect = function(opt){
-    if(sumber = "NULL"){
-        return NULL
-    }
     if(opt = "Low"){
         return "1"
     }
-    if(opt = "Medium"){
+    else if(opt = "Medium"){
         return "2"
     }
-    if(opt = "Hot"){
+    else if(opt = "Hot"){
         return "3"
     }
-    if(opt = "Deal"){
+    else if(opt = "Deal"){
         return "4"
     }
-    if(opt = "Not Deal"){
+    else if(opt = "Not Deal"){
         return "5"
+    }else{
+        return NULL
     }
 }
 const TipeComingCustomer = function(opt){
@@ -314,68 +309,65 @@ const StatusWorkOrder = function(opt){
 }
 // SPK -> Terpenuhi
 const StatusSpk = function(opt){
-    if(opt = "NULL"){
-        return NULL
-    }
     if(opt = "Di bayar"){
         return "1"
     }
-    if(opt = "Sudah SO"){
+    else if(opt = "Sudah SO"){
         return "2"
     }
-    if(opt = "Dikirim Parsial"){
+    else if(opt = "Dikirim Parsial"){
         return "3"
     }
-    if(opt = "Dikirim Full"){
+    else if(opt = "Dikirim Full"){
         return "4"
     }
-    if(opt = "Dikembalikan"){
+    else if(opt = "Dikembalikan"){
         return "5"
     }
-    if(opt = "Indent"){
+    else if(opt = "Indent"){
         return "6"
     }
-    if(opt = "Batal SPK"){
+    else if(opt = "Batal SPK"){
         return "-1"
+    }else{
+        return NULL
     }
     
 }
 const tipePembayaran = function(opt){
-    if(sumber = "NULL"){
-        return NULL
-    }
     if(opt = "Cash"){
         return "cash"
     }
-    if(opt = "Cheque"){
+    else if(opt = "Cheque"){
         return "Cheque"
     }
-    if(opt = "Bank Transfer / KU"){
+    else if(opt = "Bank Transfer / KU"){
         return "KU"
     }
-    if(opt = "Fintech"){
+    else if(opt = "Fintech"){
         return "Fintech"
     }
-    if(opt = "COD"){
+    else if(opt = "COD"){
         return "COD"
+    }else{
+        return NULL
     }
     
 }
 const statusDeliveryDocument = function(opt){
-    if(sumber = "NULL"){
-        return NULL
-    }
     if(opt = "Low"){
         return "low"
     }
-    if(opt = "High"){
+    else if(opt = "High"){
         return "High"
     }
-     if(opt = "Deal"){
+    else if(opt = "Deal"){
         return "Deal"
     }
-	if(opt = "Not Deal"){
+	else if(opt = "Not Deal"){
         return "Not Deal"
+    }else{
+        return NULL
     }
 }
 const statusFakturSTNK = function(opt){
@@ -402,10 +394,31 @@ const statusFakturSTNK = function(opt){
     }
 
 }
+const statusShippingList = function(param){
+    if(param = "Sudah diterima"){
+        return "1"
+    }else if(param = "Belum diterima"){
+        return "2"
+    }else{
+        return NULL
+    }
+}
+
+const statusRFS = function(param){
+    if(param = "RFS"){
+        return "1"
+    }else if(param = "NRFS"){
+        return "0"
+    }else{
+        return NULL
+    }
+}
 
 //exports.statusFakturSTNK            = statusFakturSTNK
 exports.statusDeliveryDocument      = statusDeliveryDocument
+exports.statusShippingList          = statusShippingList
 exports.tipePembayaran              = tipePembayaran
+exports.statusRFS                   = statusRFS
 exports.StatusSpk                   = StatusSpk
 exports.StatusWorkOrder             = StatusWorkOrder
 exports.KonfirmasiPekerjaanTambahan = KonfirmasiPekerjaanTambahan
