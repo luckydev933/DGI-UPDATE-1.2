@@ -85,36 +85,36 @@ Controller.post('/', async function(request, response){
                     .execute('SP_DGI_API_AUTH')
                     const result = await pool.request().
                     input('dealerId', SQL.VarChar, dealerId.recordset[0].DEALER_ID).
+                    input('group', SQL.VarChar, dealerId.recordset[0].DEALER_GROUP).
                     input('fromTime', SQL.VarChar, request.body.fromTime).
                     input('toTime', SQL.VarChar, request.body.toTime).
                     input('noSO', SQL.VarChar(25), request.body.noSO).
-                    execute(Model.getPRSL())
+                    execute('SP_DGI_API_DPHLO_PULL')
                     if(result.recordset.length >0){
                         for(var i = 0; i < result.recordset.length; i++){
                                 const bind = {
-                                    noSO: result.recordset[i].NO_SO, 
-                                    tglSO: result.recordset[i].TANGGAL_SO,
+                                    noInvoiceUangJaminan: result.recordset[i].NO_TRANS,
+                                    idHLODocument: result.recordset[i].ID_HLO,
+                                    tanggalPemesananHLO: result.recordset[i].TGL_HLO,
+                                    noWorkOrder: result.recordset[i].NO_PKB,
                                     idCustomer: result.recordset[i].KD_CUSTOMER,
-                                    discSO: result.recordset[i].SO_DISKON,
-                                    totalHargaSO: result.recordset[i].TOTAL_PERSO,
-                                    parts: [
+                                    dealerId: result.recordset[i].PART_NUMBER,
+                                    createdTime: result.recordset[i].CREATED_TIME,
+                                    modifiedTime: result.recordset[i].LASTMODIFIED_TIME,
+                                    parts:[
                                         {
-                                        partsNumber: result.recordset[i].PART_NUMBER,
-                                        kuantitas: result.recordset[i].QTY,
-                                        hargaParts: result.recordset[i].HARGA_JUAL,
-                                        promoIdParts: result.recordset[i].KD_PROMO,
-                                        discAmount: result.recordset[i].DISKON_AMOUNT,
-                                        discPercentage: result.recordset[i].SIKON_AVG,
-                                        ppn: result.recordset[i].PPN,
-                                        totalHargaParts: result.recordset[i].TOTAL_HARGA,
-                                        uangMuka: result.recordset[i].UANG_MUKA,
-                                        bookingIdReference: result.recordset[i].ID_HLO,
-                                        createdTime: result.recordset[i].CREATED_TIME,
+                                            partsNumber: result.recordset[i].PART_NUMBER,
+                                            kuantitas: result.recordset[i].QTY,
+                                            hargaParts: result.recordset[i].HARGA_JUAL,
+                                            totalHargaParts: result.recordset[i].TOTAL_HARGA_JUAL,
+                                            uangMuka: result.recordset[i].UANG_MUKA,
+                                            sisaBayar: result.recordset[i].SISA_PEMBAYARAN,
+                                            createdTime: result.recordset[i].CREATED_TIME_PART,
+                                            modifiedTime: result.recordset[i].MODTIME_PART
                                         }
                                     ]
                                 }
                                 databinding.push(bind)
- 
                         }
                         var selisih = SelisihTanggal(databinding[0].tglSO)
                         response.set({
@@ -163,7 +163,5 @@ Controller.post('/', async function(request, response){
         })
     }
 })
-
-
 
 module.exports = Controller

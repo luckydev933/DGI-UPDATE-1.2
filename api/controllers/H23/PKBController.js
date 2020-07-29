@@ -4,6 +4,7 @@ const Model = require('../../models/H23/PKBModel')
 const Auth = require('../../../modules/Authorization')
 const SQL = require('mssql')
 const sha256 = require('js-sha256')
+const Kamus = require('../../../modules/KamusData')
 
 function DateSplitter(datestring){
     const DateSplit = datestring.split(" ")
@@ -86,7 +87,7 @@ Controller.post('/', async function(request, response) {
                             tahunMotor: data.recordset[i].TAHUN,
                             informasiBensin: data.recordset[i].BBM,
                             kmTerakhir: data.recordset[i].KM_MOTOR,
-                            tipeComingCustomer: data.recordset[i].TY,
+                            tipeComingCustomer: Kamus.TipeComingCustomer(data.recordset[i].TY),
                             namaPemilik: data.recordset[i].NAMA_PEMILIK,
                             alamatPemilik: data.recordset[i].ALAMAT_PEMILIK,
                             kodePropinsiPemilik: data.recordset[i].KD_PROPINSI_PEMILIK,
@@ -102,33 +103,36 @@ Controller.post('/', async function(request, response) {
                             kodePosPembawa: data.recordset[i].KODE_POS_PEMBAWA,
                             namaPembawa: data.recordset[i].NAMA_PEMBAWA,
                             noTelpPembawa: data.recordset[i].NO_TELP_PEMBAWA,
-                            hubunganDenganPemilik: data.recordset[i].HUB_DENGAN_PEMILIK,
+                            hubunganDenganPemilik: Kamus.HubunganDenganPemilik(data.recordset[i].HUB_DENGAN_PEMILIK),
                             keluhanKonsumen: data.recordset[i].KELUHAN_KONSUMEN,
                             rekomendasiSA: data.recordset[i].HASIL_ANALISA_SA,
                             hondaIdSA: data.recordset[i].KD_SA,
                             hondaIdMekanik: data.recordset[i].KD_MEKANIK,
                             saranMekanik: data.recordset[i].SARAN_MEKANIK,
-                            asalUnitEntry: data.recordset[i].ASAL_UNIT_ENTRY,
+                            asalUnitEntry: Kamus.AsalUnitEntry(data.recordset[i].ASAL_UNIT_ENTRY),
                             idPIT: data.recordset[i].ID_PIT,
-                            jenisPIT: data.recordset[i].JENIS_PIT,
+                            jenisPIT: Kamus.JenisPit(data.recordset[i].JENIS_PIT),
                             waktuPendaftaran: data.recordset[i].WAKTU_PENDAFTARAN,
                             waktuSelesai: data.recordset[i].WAKTU_SELESAI,
                             totalFRT: data.recordset[i].TOTAL_FRT,
-                            setUpPembayaran: data.recordset[i].SET_UP_PEMBAYARAN,
+                            setUpPembayaran: Kamus.SetUpPembayaran(data.recordset[i].SET_UP_PEMBAYARAN),
                             catatanTambahan: data.recordset[i].CATATAN_TAMBAHAN,
                             konfirmasiPekerjaanTambahan: data.recordset[i].KONFIRMASI_PEKERJAANTAMBAHAN,
                             noBukuClaimC2: data.recordset[i].NO_BUKU,
                             noWorkOrderJobReturn: data.recordset[i].NO_WO_RETURN,
                             totalBiayaService: data.recordset[i].HARGA,
                             waktuPekerjaan: data.recordset[i].WAKTU_PEKERJAAN,
-                            statusWorkOrder: data.recordset[i].STATUS_PKB,
+                            statusWorkOrder: Kamus.StatusWorkOrder(data.recordset[i].STATUS_PKB),
+                            dealerId: data.recordset[i].KD_DEALERAHM,
                             createdTime: data.recordset[i].CREATED_TIME,
+                            modifiedTime: data.recordset[i].MODTIME,
                             services: [{
                                 idJob: data.recordset[i].ID_JOB_PEKERJAAN,
                                 namaPekerjaan: data.recordset[i].NAMA_PEKERJAAN,
                                 jenisPekerjaan: data.recordset[i].JENIS_PEKERJAAN,
                                 biayaService: data.recordset[i].HARGA_PEKERJAAN,
                                 createdTime: data.recordset[i].CREATED_TIME_SERVICE,
+                                modifiedTime: data.recordset[i].MODTIME_SERVICE
                             }],
                             parts: [{
                                 idJob: data.recordset[i].ID_JOB_PART,
@@ -136,6 +140,7 @@ Controller.post('/', async function(request, response) {
                                 kuantitas: data.recordset[i].QTY,
                                 hargaParts: data.recordset[i].HARGA_SATUAN,
                                 createdTime: data.recordset[i].CREATED_TIME_PART,
+                                modifiedTime: data.recordset[i].MODTIME_PART
                             }]
                         }
                         databinding.push(bind)

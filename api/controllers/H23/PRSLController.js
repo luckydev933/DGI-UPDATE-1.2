@@ -85,6 +85,7 @@ Controller.post('/', async function(request, response){
                     .execute('SP_DGI_API_AUTH')
                     const result = await pool.request().
                     input('dealerId', SQL.VarChar, dealerId.recordset[0].DEALER_ID).
+                    input('group', SQL.VarChar, dealerId.recordset[0].DEALER_GROUP).
                     input('fromTime', SQL.VarChar, request.body.fromTime).
                     input('toTime', SQL.VarChar, request.body.toTime).
                     input('noSO', SQL.VarChar(25), request.body.noSO).

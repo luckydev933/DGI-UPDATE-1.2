@@ -133,178 +133,171 @@ const StatusProspect = function(opt){
     }
 }
 const TipeComingCustomer = function(opt){
-    if(sumber = "NULL"){
-        return NULL
-    }
     if(opt = "Pembawa Motor"){
         return "B"
     }
-    if(opt = "Pemakai Motor"){
+    else if(opt = "Pemakai Motor"){
         return "P"
     }
-    if(opt = "Pemilik Motor"){
+    else if(opt = "Pemilik Motor"){
         return "M"
+    }else{
+        return NULL
     }
 }
 const HubunganDenganPemilik = function(opt){
-    if(sumber = "NULL"){
-        return NULL
-    }
     if(opt = "KEPALA KELUARGA"){
         return "1"
     }
-    if(opt = "SUAMI"){
+    else if(opt = "SUAMI"){
         return "2"
     }
-    if(opt = "ISTRI"){
+    else if(opt = "ISTRI"){
         return "3"
     }
-    if(opt = "ANAK"){
+    else if(opt = "ANAK"){
         return "4"
     }
-    if(opt = "MENANTU"){
+    else if(opt = "MENANTU"){
         return "5"
     }
-    if(opt = "CUCU"){
+    else if(opt = "CUCU"){
         return "6"
     }
-    if(opt = "ORANG TUA"){
+    else if(opt = "ORANG TUA"){
         return "7"
     }
-    if(opt = "MERTUA"){
+    else if(opt = "MERTUA"){
         return "8"
     }
-    if(opt = "FAMILI LAIN"){
+    else if(opt = "FAMILI LAIN"){
         return "9"
     }
-    if(opt = "PEMBANTU"){
+    else if(opt = "PEMBANTU"){
         return "10"
     }
-    if(opt = "LAINNYA"){
+    else if(opt = "LAINNYA"){
         return "11"
     }
-    if(opt = "PEMILIK"){
+    else if(opt = "PEMILIK"){
         return "0"
+    }else{
+        return NULL
     }
 }
 const AsalUnitEntry = function(opt){
-    if(sumber = "NULL"){
-        return NULL
-    }
     if(opt = "Pit Express"){
         return "AA"
     }
-    if(opt = "JDA"){
+    else if(opt = "JDA"){
         return "Reminder"
     }
-    if(opt = "Pos Service"){
+    else if(opt = "Pos Service"){
         return "GC"
     }
-    if(opt = "Service Visit Tenda"){
+    else if(opt = "Service Visit Tenda"){
         return "PA"
     }
-    if(opt = "Service Visit Mobil"){
+    else if(opt = "Service Visit Mobil"){
         return "OT"
     }
-    if(opt = "Service Visit Motor (Honda Home Service)"){
+    else if(opt = "Service Visit Motor (Honda Home Service)"){
         return "HS"
     }
-    if(opt = "AHASS Event"){
+    else if(opt = "AHASS Event"){
         return "AE"
     }
-    if(opt = "Walk In"){
+    else if(opt = "Walk In"){
         return "WI"
+    }else{
+        return NULL
     }
     
 }
 const JenisPit = function(opt){
-    if(sumber = "NULL"){
-        return NULL
-    }
     if(opt = "Reguler"){
         return "REG"
     }
-    if(opt = "Fast Track"){
+    else if(opt = "Fast Track"){
         return "FT"
     }
-    if(opt = "Booking"){
+    else if(opt = "Booking"){
         return "BK"
     }
-    if(opt = "Pit Express"){
+    else if(opt = "Pit Express"){
         return "PE"
     }
-    if(opt = "Pit KPB"){
+    else if(opt = "Pit KPB"){
         return "PKPB"
+    }else{
+        return NULL
     }
 
 }
 const SetUpPembayaran = function(opt){
-    if(opt = "NULL"){
-        return NULL
-    }
     if(opt = "TOP"){
         return "TOP"
     }
-    if(opt = "CASH"){
+    else if(opt = "CASH"){
         return "CASH"
     }
-    if(opt = "CRED"){
+    else if(opt = "CRED"){
         return "CRED"
     }
-    if(opt = "BIL"){
+    else if(opt = "BIL"){
         return "BIL"
     }
-    if(opt = "CEK"){
+    else if(opt = "CEK"){
         return "CEK"
     }
-    if(opt = "COD"){
+    else if(opt = "COD"){
         return "COD"
     }
-    if(opt = "GOPAY"){
+    else if(opt = "GOPAY"){
         return "GOPAY"
     }
-    if(opt = "OVO"){
+    else if(opt = "OVO"){
         return "OVO"
     }
-    if(opt = "KU"){
+    else if(opt = "KU"){
         return "TRANSFER"
     }
-    if(opt = "DANA"){
+    else if(opt = "DANA"){
         return "DANA"
+    }else{
+        return NULL
     }
 }
 const KonfirmasiPekerjaanTambahan = function(opt){
-    if(sumber = "NULL"){
-        return NULL
-    }
     if(opt = "Yes"){
         return "1"
     }
-    if(opt = "No"){
+    else if(opt = "No"){
         return "0"
+    }else{
+        return NULL
     }
 }
 const StatusWorkOrder = function(opt){
-    if(sumber = "NULL"){
-        return NULL
-    }
     if(opt = "Diapprove"){
         return "1"
     }
-    if(opt = "Pengerjaan"){
+    else if(opt = "Pengerjaan"){
         return "2"
     }
-    if(opt = "Pending"){
+    else if(opt = "Pending"){
         return "3"
     }
-    if(opt = "Pembayaran"){
+    else if(opt = "Pembayaran"){
         return "4"
     }
-    if(opt = "Dibayar"){
+    else if(opt = "Dibayar"){
         return "5"
     }
-    if(opt = "Menunggu"){
+    else if(opt = "Menunggu"){
         return "0"
+    }else{
+        return NULL
     }
 }
 // SPK -> Terpenuhi
@@ -371,26 +364,25 @@ const statusDeliveryDocument = function(opt){
     }
 }
 const statusFakturSTNK = function(opt){
-    if(sumber = "NULL"){
-        return NULL
-    }
-     if(opt = "Verifikasi"){
+    if(opt = "Verifikasi"){
         return "1"
     }
-     if(opt = "Approval Biaya"){
+    else if(opt = "Approval Biaya"){
         return "2"
     }
-     if(opt = "Approval Biaya"){
+    else if(opt = "Approval Biaya"){
         return "3"
     }
-     if(opt = "Approve kasir"){
+    else if(opt = "Approve kasir"){
         return "4"
     }
-     if(opt = "Penerimaan"){
+    else if(opt = "Penerimaan"){
         return "5"
     }
-         if(opt = "Penyerahan"){
+    else if(opt = "Penyerahan"){
         return "6"
+    }else{
+        return NULL
     }
 
 }

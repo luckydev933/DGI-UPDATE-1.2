@@ -1769,3 +1769,36 @@
   "Message": "22",
   "ResponseStatus": "1"
 }
+{
+  "DealerRequestActivity": "-",
+  "IP": "::1",
+  "Endpoint": "/dgi_api/v1/pkb/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Fri, 03 Jul 2020 02:17:28 GMT",
+  "ResponseTime": "10867.870",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::1",
+  "Endpoint": "/dgi_api/v1/pkb/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Fri, 03 Jul 2020 02:22:00 GMT",
+  "ResponseTime": "12322.273",
+  "Message": "-",
+  "ResponseStatus": "1"
+}
+{
+  "DealerRequestActivity": "-",
+  "IP": "::1",
+  "Endpoint": "/dgi_api/v1/pkb/read",
+  "BodyRequest": "[{[object Object]}]",
+  "StatusCode": "200",
+  "RequestTime": "Fri, 03 Jul 2020 02:33:55 GMT",
+  "ResponseTime": "2060.221",
+  "Message": "-",
+  "ResponseStatus": "1"
+}

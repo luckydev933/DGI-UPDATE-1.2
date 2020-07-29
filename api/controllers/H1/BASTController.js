@@ -83,6 +83,7 @@ Controller.post('/', async function(request, response) {
                 const BastResult = await pool.request()
                     .input('dealerId', SQL.VarChar, dealerId.recordset[0].DEALER_ID)
                     .input('dealer', SQL.VarChar, request.body.dealerId)
+                    .input('group', SQL.VarChar, dealerId.recordset[0].DEALER_GROUP)
                     .input('fromTime', SQL.VarChar, request.body.fromTime)
                     .input('toTime', SQL.VarChar, request.body.toTime)
                     .input('deliveryDocumentId', SQL.VarChar, request.body.deliveryDocumentId)
