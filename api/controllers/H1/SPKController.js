@@ -181,6 +181,7 @@ Controller.post('/', async function(request, response){
                                 databinding.push(bind)
  
                         }
+                        console.log(databinding)
                         const filter = []
                         const tanggal = new Date(databinding[0].tanggalPesanan).toLocaleString()
                         const pisah = tanggal.split(",")
@@ -206,14 +207,15 @@ Controller.post('/', async function(request, response){
                         response.status(200).json({
                             status: 1,
                             message: null,
-                            data: databinding.filter(function(index){
-                                const tanggal = new Date(index.tanggalPesanan).toLocaleString()
-                                const pisah = tanggal.split(",")
-                                const Tanggalspk = TanggalSPK(pisah[0])
-                                console.log(new Date(Tanggalspk))
-                                console.log(Tanggalspk)
-                                return new Date(Tanggalspk).getTime() <= new Date(selisih).getTime()
-                            })
+                            data: databinding
+                            // .filter(function(index){
+                            //     const tanggal = new Date(index.tanggalPesanan).toLocaleString()
+                            //     const pisah = tanggal.split(",")
+                            //     const Tanggalspk = TanggalSPK(pisah[0])
+                            //     console.log(new Date(Tanggalspk))
+                            //     console.log(Tanggalspk)
+                            //     return new Date(Tanggalspk).getTime() <= new Date(selisih).getTime()
+                            // })
                         })
                     }else{
                         response.json({
